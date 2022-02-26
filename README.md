@@ -53,7 +53,7 @@ change the file that is to be used to communicated with **mxkbd** to *SOCKET_FIL
 **-a**  
 This is only applicable to the **list** operation when done **on modes**. This will list out the value of *PROPERTY* of for each and every mode (see below). With the **list** operation **on keybinds** this is a **list arg** (see below).
 
-**-m*** MODE_NAME*
+**-m** *MODE_NAME*
 
 for *OPERATIONS* on keybinds and...
 
