@@ -2,6 +2,44 @@
 
 mxkbc - modular X key bind client - client for mxkbd to add, list, remove, and set keybinds and keybind modes
 
+# EXAMPLES
+
+Adding keybind modes
+
+![Adding keybind modes](media/add-keybind-modes.gif)
+
+Setting the selected mode
+
+![Setting the selected mode](media/set-selected-mode.gif)
+
+Adding keybinds
+
+![Adding keybinds](media/add-keybinds.gif)
+
+Removing a keybind
+
+![Removing a keybind](media/remove-keybind.gif)
+
+Listing keybinds
+
+![Listing keybinds](media/list-all-keybinds.gif)
+
+Listing keybind descriptions
+
+![Listing keybind descriptions](media/list-all-keybind-descriptions.gif)
+
+Listing all modes
+
+![Listing all modes](media/list-all-keybind-modes.gif)
+
+Setting a mode description
+
+![Setting a mode description](media/set-keybind-mode-description.gif)
+
+Removing a mode
+
+![Removing a mode](media/remove-mode.gif)
+
 # SYNOPSIS
 
 **mxkbc** [*MXKBC_OPTIONS*] *OPERATION MODE_OPTION OPERATION_ARGS*
@@ -12,9 +50,20 @@ mxkbc - modular X key bind client - client for mxkbd to add, list, remove, and s
 
 **mxkbc** is a client for **mxkbd**. This client is where one configures **mxkbd** through **mxkbd**'s arguments. **mxkbd** must first be started before using **mxkbc**.
 
+# INSTALLATION
+
+Open a terminal and run
+```sh
+git clone https://github.com/ZakharEl/mxkbc
+```
+. Then **cd** into the clone directory and run
+```sh
+sudo make install
+```
+
 # MXKBC_OPTIONS
 
-**-s** *SOCKET_FILE_PATH*  
+**-s** *SOCKET_FILE_PATH*
 change the file that is to be used to communicated with **mxkbd** to *SOCKET_FILE_PATH*.
 
 # OPERATIONS
