@@ -1,6 +1,6 @@
 # NAME
 
-mxkbc - modular X key bind client - client for mxkbd to add, list, remove, and set keybinds and keybind modes
+mxkbc - modular X key bind client - client for [mxkbd](https://github.com/ZakharEl/mxkbd) to add, list, remove, and set keybinds and keybind modes
 
 # EXAMPLES
 
