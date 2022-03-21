@@ -1,10 +1,17 @@
+DEBUG?=0
+ifeq ($(DEBUG), 0)
+	BUILD:=-O3
+else
+	BUILD:=-g
+endif
+
 LIBS:=
 
 .PHONY: all install uninstall
 all: exe/mxkbc
 
 exe/%: src/%.cpp
-	g++ -pedantic -Wall -Wextra $(LIBS) -g $^ -o $@
+	g++ -pedantic -Wall -Wextra $(LIBS) $(BUILD) $^ -o $@
 
 install: exe/mxkbc
 	chmod 0755 exe/mxkbc
